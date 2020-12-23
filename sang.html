@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js – The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <p style="display: flex; align-items: center; justify-content: center;">
+                    Made by
+                    <img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo"
+                        style="height: 90px; margin-left: 1rem; background: transparent;" class="demo-logo">
+                </p>
+                <p style="text-align: left;">Đề tài thuyết trình:</p>
+                <h3>Ứng dụng ghi chú trong thời kì 4.0</h3>
+                    <small><p>
+                        Nhóm 5<br>
+                        Giảng viên phụ trách: <a>Bùi Hữu Đông</a><br>
+                        Sinh viên thực hiện: <a>Ngô Quang Sang - CT030343</a> & <a>Nguyễn Thành Tiến - AT150849</a>
+                    </p></small>
+            </section>
+
+            <section>
+                <section>
+                    <h2 style="text-align: left;">Tại sao?</h2>
+                    <!-- Phân tích cuộc sống hiện đại phải tiếp nhận quá nhiều thông tin -->
+                    <h4 class="fragment" style="text-align: left;">1. Môi trường sống thời hiện đại</h4>
+                    <p class="fragment" style="text-align: left;">- Phải xử lí nhiều tác vụ (multi-tasking)</p>
+                    <p class="fragment" style="text-align: left;">- Yêu cầu nạp nhiều thông tin trong ngày</p>
+                    <!-- Phân tích bộ não con người -->
+                    <h4 class="fragment" style="text-align: left;">2. Não bộ con người</h4>
+                    <p class="fragment" style="text-align: left;">- Vùng nhớ ngắn hạn (short-term memory) và vùng nhớ
+                        dài hạn (long-term memory)</p>
+                    <p class="fragment" style="text-align: left;">- Con người quên gần 40% thông tin mới trong
+                        vòng 24 giờ đầu tiên đọc hoặc nghe nó</p>
+                </section>
+                <section>
+                    <blockquote>Ghi chú là một kỹ năng cần thiết để sinh tồn và
+                        phát triển trong cuộc sống hiện đại</blockquote>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2 style="text-align: left;">Ghi chú là gì?</h2>
+                    <p class="fragment" style="text-align: left;">- Là hành động ghi lại vào những nơi có thể lưu trữ những thông tin
+                        cần thiết nạp vào từ những nguồn khác một cách có sàn lọc và chủ đích</p>
+                    <p class="fragment" style="text-align: left;">- Là một kỹ năng giúp ghi chép lại các thông tin cần
+                        thiết để ghi nhớ</p>
+                </section>
+                <section>
+                    <div style="display: flex; justify-content: center; height: 400px">
+                        <img src="sang/soghichep.jpg" alt="">
+                        <img src="sang/giayghichu.jpg" alt="">
+                    </div>
+                    <p style="font-style: italic;">Sổ ghi chép và mảnh giấy note là những công cụ ghi chú</p>
+                </section>
+            </section>
+
+            <section>
+                <h2 style="text-align: left;">Những người ghi chú thành công</h2>
+                <div class="fragment" style="display: flex; align-items: center;">
+                    <!-- Giới thiệu về Richard Branson -->
+                    <blockquote style="width: 100%; text-align: justify; padding: 1rem; font-size: 2rem;">
+                        "Tôi có hàng chục cuốn sổ ghi chép mỗi năm và ghi lại mọi thứ xảy ra với tôi mỗi ngày. Một ý tưởng không được viết
+                        ra là một ý tưởng bị mất đi. Khi cảm hứng lóe lên trong đầu, bạn phải nắm lấy nó" - Richard Branson
+                    </blockquote>
+                    <img src="sang/richardbranson.jpg" alt="" height="195">
+                </div>
+                <p class="fragment" style="font-style: italic; text-align: left;">- Nhiều vị trí cao cũng cần đến kỹ năng ghi chú</p>
+            </section>
+            <section>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;">
+                    <div>
+                        <img style="margin: 1rem 0;" src="sang/thomasedison.jpg" alt="" height="200">
+                        <h5 style="font-size: 1.8rem;">Thomas Edison</h5>
+                    </div>
+                    <div class="fragment">
+                        <img style="margin: 1rem 0;" src="sang/billgates.jpg" alt="" height="200">
+                        <h5 style="font-size: 1.8rem;">Bill Gates</h5>
+                    </div>
+                    <div class="fragment">
+                        <img style="margin: 1rem 0;" src="sang/georgelucas.jpg" alt="" height="200">
+                        <h5 style="font-size: 1.8rem;">George Lucas</h5>
+                    </div>
+                    <div class="fragment">
+                        <img style="margin: 1rem 0;" src="sang/timferriss.jpeg" alt="" height="200">
+                        <h5 style="font-size: 1.8rem;">Tim Ferriss</h5>
+                    </div>
+                </div>
+                <p class="fragment" style="font-size: 2rem; text-align: justify; font-style: italic;">
+                    Những tiêu biểu khác như: Ernest Hemingway, Mark Twain, Pablo Picasso, Sheryl Sandberg,
+                    J.K. Rowling, Bruce Springsteen, Aaron Sorkin,...
+                </p>
+            </section>
+
+            <section>
+                <h2 style="text-align: left;">Lợi ích của việc ghi chú</h2>
+                <ol style='float: left'>
+                    <li class="fragment fade-right">Giải phóng khỏi tình trạng quá tải thông tin</li>
+                    <li class="fragment fade-right">Lắng nghe tốt hơn</li>
+                    <li class="fragment fade-right">Giúp mọi thứ thực tế hơn</li>
+                    <li class="fragment fade-right">Nắm bắt thông tin quan trọng</li>
+                    <li class="fragment fade-right">Trở thành người đọc hiệu quả hơn</li>
+                    <li class="fragment fade-right">Cải thiện trí nhớ</li>
+                    <li class="fragment fade-right">Sắp xếp suy nghĩ tốt hơn</li>
+                    <li class="fragment fade-right">Cải thiện sự chú ý</li>
+                    <li class="fragment fade-right">Động lực đạt được mục tiêu</li>
+                </ol>
+            </section>
+
+            <section>
+                <section data-auto-animate>
+                    <h2 style="text-align: left;">Ghi chú trong thời đại 4.0</h2>
+                </section>
+                <section data-auto-animate>
+                    <h2 style="text-align: left;">Ghi chú trong thời đại 4.0</h2>
+                    <p style="text-align: left;">- Nhiều công cụ ghi chú xuất hiện thay thế cho cuốn sổ tay và cây bút
+                        bi truyền thống</p>
+                </section>
+                <section>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; height: 400px">
+                        <div>
+                            <img style="margin: 1rem 0;" src="sang/tasks2.jpg" alt="" height="250">
+                            <h5 style="font-size: 1.8rem;">Google Tasks</h5>
+                        </div>
+                        <div>
+                            <img style="margin: 1rem 0;" src="sang/keep.png" alt="" height="250">
+                            <h5 style="font-size: 1.8rem;">Google Keep</h5>
+                        </div>
+                    </div>
+                    <h2>Google</h2>
+                </section>
+                <section>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;">
+                        <div>
+                            <img style="margin: 1rem 0;" src="sang/stickynote.png" alt="" height="250">
+                            <h5 style="font-size: 1.8rem;">Sticky Notes</h5>
+                        </div>
+                        <div>
+                            <img style="margin: 1rem 0;" src="sang/microsofttodo.jpg" alt="" height="250">
+                            <h5 style="font-size: 1.8rem;">Microsoft To Do</h5>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <h2>Microsoft</h2>
+                        </div>
+                        <div>
+                            <img style="margin: 1rem 0;" src="sang/onenote.png" alt="" height="250">
+                            <h5 style="font-size: 1.8rem;">OneNote</h5>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            
+            <section>
+                <h2 style="text-align: left;">Kết luận</h2>
+                <p class="fragment fade-down" style="text-align: left;">Ghi chú là một thói quen đóng một vai trò quan trọng trong cuộc sống hiện đại</p>
+                <p class="fragment fade-down" style="text-align: left;">Giúp chúng ta tiết kiệm được rất nhiều thời gian trong một cuộc sống</p>
+            </section>
+            <section data-auto-animate>
+                <h2>Ứng dụng Note5</h2>
+            </section>
+            <section data-auto-animate>
+                <h2>Ứng dụng Note5</h2>
+                <img src="sang/note5.png" alt="" height="300">
+            </section>
+            <section>
+                <h2>Mô hình sử dụng: MVC</h2>
+                <table class="fragment fade-up">
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">M</td>
+                            <td>Model</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">V</td>
+                            <td>View</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">C</td>
+                            <td>Controller</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <section>
+                    <h2>Diagram</h2>
+                </section>
+                <section>
+                    <h2>Models</h2>
+                    <img src="sang/diagram/model.png" alt="" height="500">
+                </section>
+                <section>
+                    <h2>Views</h2>
+                    <img src="sang/diagram/view.png" alt="" height="500">
+                </section>
+                <section>
+                    <h2>Controller</h2>
+                    <img src="sang/diagram/controller.png" alt="" height="500">
+                </section>
+            </section>
+            <section>
+                <h2>DEMO</h2>
+            </section>
+            <section>
+                <h2>Kết thúc</h2>
+                <p>Cám ơn các bạn đã theo dõi</p>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+
+        // Also available as an ES module, see:
+        // https://revealjs.com/initialization/
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+
+    </script>
+
+</body>
+
+</html>
